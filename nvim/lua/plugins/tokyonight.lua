@@ -3,7 +3,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-        transparent = true,
+        transparent = false,
         integrations = {
             lsp_trouble = true,
             mini = true,

@@ -1,10 +1,10 @@
 window:
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5
   dynamic_padding: true
   decorations: none
-  opacity: 0.87
+  opacity: 0.85
 
   # Startup Mode (changes require restart)
   #
@@ -12,7 +12,7 @@ window:
   #   - Windowed
   #   - Maximized
   #   - Fullscreen
-  startup_mode: Fullscreen
+  startup_mode: Maximized
 
   # Decorations theme variant
   #
@@ -32,10 +32,12 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: Hack Nerd Font
+    # family: Hack Nerd Font Mono
+    family: JetBrainsMono Nerd Font
     style: Regular
   bold:
-    family: Hack Nerd Font
+    # family: Hack Nerd Font Mono
+    family: JetBrainsMono Nerd Font
     style: Bold
   # Point size
   size: 11.0

@@ -10,6 +10,9 @@ return {
                 theme = "auto",
                 globalstatus = true,
                 disabled_filetypes = { statusline = { "dashboard", "alpha" } },
+                component_separators = { left = "|", right = "|" },
+                section_separators = { left = "", right = "" },
+                -- section_separators = { left = '', right = ''},
             },
             sections = {
                 lualine_a = { "mode" },
@@ -24,7 +27,6 @@ return {
                             hint = icons.diagnostics.Hint,
                         },
                     },
-                    { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
                     { "filename", path = 1, symbols = { modified = "  ", readonly = "", unnamed = "" } },
           -- stylua: ignore
           {
@@ -64,15 +66,27 @@ return {
                             removed = icons.git.removed,
                         },
                     },
+                    "encoding",
+                    {
+                        "fileformat",
+                        symbols = {
+                            unix = "", -- e712
+                            dos = "", -- e70f
+                            mac = "", -- e711
+                        },
+                    },
+                    "filetype",
                 },
                 lualine_y = {
-                    { "progress", separator = " ", padding = { left = 1, right = 0 } },
-                    { "location", padding = { left = 0, right = 1 } },
+                    { "progress", separator = "", padding = { left = 1, right = 1 } },
                 },
                 lualine_z = {
-                    function()
-                        return " " .. os.date("%R")
-                    end,
+                    { "location", padding = { left = 0, right = 1 } },
+                    -- {
+                    --     function()
+                    --         return " " .. os.date("%R")
+                    --     end,
+                    -- },
                 },
             },
             extensions = { "neo-tree", "lazy" },

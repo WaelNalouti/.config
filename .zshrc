@@ -100,7 +100,7 @@ alias ll="ls -la"
 alias t="tmux"
 alias c="clear"
 alias f="fzf" 
-alias sdw="killall node && killall nvim" 
+alias sdw="killall node nvim Discord" 
 alias vf="v ~/\$(fzf --height 40% --reverse --border)"
 #
 # Example aliases

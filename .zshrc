@@ -100,6 +100,7 @@ alias ll="ls -la"
 alias t="tmux"
 alias c="clear"
 alias f="fzf" 
+alias sdw="killall node && killall nvim" 
 alias vf="v ~/\$(fzf --height 40% --reverse --border)"
 #
 # Example aliases
@@ -109,3 +110,7 @@ alias vf="v ~/\$(fzf --height 40% --reverse --border)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/joe/go/bin/
+

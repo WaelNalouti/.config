@@ -9,3 +9,7 @@ vim.opt.scrolloff = 8
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+vim.opt.listchars.append(
+    vim.opt.listchars,
+    { eol = "↲", tab = "» ", trail = "·", extends = "<", precedes = ">", conceal = "┊", nbsp = "␣" }
+)

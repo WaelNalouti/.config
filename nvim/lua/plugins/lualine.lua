@@ -7,7 +7,8 @@ return {
 
         return {
             options = {
-                theme = "auto",
+                -- theme = "auto",
+                theme = "onedark",
                 globalstatus = true,
                 disabled_filetypes = { statusline = { "dashboard", "alpha" } },
                 component_separators = { left = "|", right = "|" },

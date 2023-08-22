@@ -3,7 +3,7 @@
 -- Add any additional autocmds here
 
 -- colorscheme
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("onedark")
 
 -- transparent bg
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

@@ -1,6 +1,5 @@
 return {
   "navarasu/onedark.nvim",
-  name = "onedark",
   lazy = false,
   priority = 1000,
   opts = {
@@ -13,7 +12,7 @@ return {
     ending_tildes = true, -- Show the end-of-buffer tildes. By default they are hidden
     -- Lualine options --
     lualine = {
-      transparent = true, -- lualine center bar transparency
+      transparent = false, -- lualine center bar transparency
     },
     -- Plugins Config --
     diagnostics = {
@@ -22,4 +21,7 @@ return {
       background = true, -- use background color for virtual text
     },
   },
+  init = function()
+    vim.cmd("colorscheme poimandres")
+  end,
 }

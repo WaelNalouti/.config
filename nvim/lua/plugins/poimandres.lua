@@ -1,7 +1,6 @@
 return {
   "olivercederborg/poimandres.nvim",
-  lazy = false,
-  priority = 1000,
+  lazy = true,
   config = function()
     require("poimandres").setup({
       -- leave this setup function empty for default config
@@ -13,8 +12,5 @@ return {
       disable_float_background = false, -- disable background for floats
       disable_italics = false, -- disable italics
     })
-  end,
-  init = function()
-    vim.cmd("colorscheme poimandres")
   end,
 }

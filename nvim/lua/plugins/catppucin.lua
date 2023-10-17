@@ -1,11 +1,11 @@
 return {
   "catppuccin/nvim",
   name = "catppuccin",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   build = ":CatppuccinCompile",
   opts = {
-    transparent_background = false,
+    transparent_background = true,
     styles = {
       keywords = { "bold" },
       functions = { "italic" },

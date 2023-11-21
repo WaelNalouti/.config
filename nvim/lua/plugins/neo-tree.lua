@@ -8,7 +8,7 @@ return {
         require("neo-tree.command").execute({
           toggle = true,
           position = "right",
-          dir = require("lazyvim.util").get_root(),
+          dir = require("lazyvim.util").root.get(),
         })
       end,
       silent = true,
@@ -21,7 +21,7 @@ return {
         require("neo-tree.command").execute({
           toggle = true,
           position = "float",
-          dir = require("lazyvim.util").get_root(),
+          dir = require("lazyvim.util").root.get(),
         })
       end,
       silent = true,
@@ -34,7 +34,7 @@ return {
         require("neo-tree.command").execute({
           toggle = true,
           position = "current",
-          dir = require("lazyvim.util").get_root(),
+          dir = require("lazyvim.util").root.get(),
         })
       end,
       silent = true,
@@ -47,7 +47,7 @@ return {
         require("neo-tree.command").execute({
           toggle = true,
           position = "bottom",
-          dir = require("lazyvim.util").get_root(),
+          dir = require("lazyvim.util").root.get(),
         })
       end,
       silent = true,
@@ -60,7 +60,7 @@ return {
         require("neo-tree.command").execute({
           toggle = true,
           position = "top",
-          dir = require("lazyvim.util").get_root(),
+          dir = require("lazyvim.util").root.get(),
         })
       end,
       silent = true,

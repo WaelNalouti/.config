@@ -4,7 +4,7 @@ window:
     y: 0
   dynamic_padding: true
   decorations: none
-  opacity: 0.95
+  opacity: 0.9
 
   # Startup Mode (changes require restart)
   #
@@ -42,7 +42,7 @@ font:
     # family: UbuntuMono Nerd Font Mono
     style: Bold
   # Point size
-  size: 9.0
+  size: 10
 
 cursor:
   # Cursor style
